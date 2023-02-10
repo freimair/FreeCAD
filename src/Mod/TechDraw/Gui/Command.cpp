@@ -930,7 +930,7 @@ void CmdTechDrawClipGroupAdd::activated(int iMsg)
 
     openCommand(QT_TRANSLATE_NOOP("Command", "ClipGroupAdd"));
     Gui::cmdAppObjectHide(view);
-    Gui::cmdAppObject(pageClip, std::ostringstream() << "addView(" << getObjectCmd(view) << ")");
+    Gui::cmdAppObject(clip, std::ostringstream() << "addView(" << getObjectCmd(view) << ")");
     Gui::cmdAppObjectShow(view);
     updateActive();
     commitCommand();
